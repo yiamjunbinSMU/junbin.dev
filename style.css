@@ -421,25 +421,65 @@ body {
         justify-content: center;
     }
 
+    /* Stack the About Section grid */
+    #about .container>div {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
     .profile-card {
         margin-top: 2rem;
     }
 
+    /* Mobile Navigation */
     .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: var(--shadow-md);
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
     }
 
-    /* Simplified for now */
+    .nav-links.active {
+        display: flex;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .nav-link {
+        margin: 1rem 0;
+        display: block;
+    }
+
     .mobile-menu-btn {
         display: block;
         background: none;
         border: none;
         font-size: 1.5rem;
+        color: var(--text-main);
+        cursor: pointer;
     }
 
     .role-header {
         flex-direction: column;
         gap: 0.25rem;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
