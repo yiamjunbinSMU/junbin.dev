@@ -999,23 +999,37 @@ body {
         z-index: 2000;
     }
     
-    /* Fix About Section Grid */
+    /* Fix About Section Grid - Stack Biography and Card */
     #about .container > div {
         display: flex !important;
         flex-direction: column !important;
         gap: 2rem !important;
         grid-template-columns: 1fr !important;
+        width: 100%;
     }
     
-    .about-text {
-        width: 100%;
-        max-width: 100%;
+    .about-text.glass {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
     }
     
     .profile-card {
-        width: 100%;
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
         padding: 1.5rem;
+        box-sizing: border-box;
+    }
+    
+    /* Ensure stat rows don't overflow */
+    .stat-row {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .stat-content {
+        width: 100%;
+        word-wrap: break-word;
     }
     
     /* Fix Hero Buttons */
