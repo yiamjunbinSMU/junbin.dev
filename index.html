@@ -23,9 +23,11 @@
 
 <body>
 
+    <!-- Ambient Background Removed for Minimalist Theme -->
+
     <header class="header">
         <nav class="nav container">
-            <a href="#" class="logo">Jun Bin's Portfolio<span style="color:var(--primary-solid)">.</span></a>
+            <a href="#" class="logo">Jun Bin<span style="color:var(--primary-solid)">.</span></a>
             <div class="nav-links">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
@@ -33,49 +35,52 @@
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto; width: 100%;">
-                <span class="hero-subtitle">Hello, I'm</span>
+            <div class="container hero-content" style="text-align: center;">
+                <span class="hero-subtitle"><span id="typing-text"></span><span class="cursor">|</span></span>
                 <h1 class="hero-title">Yiam Jun Bin</h1>
                 <p class="hero-desc">BSc Information Systems Student<br>Product Development & FinTech</p>
                 <div class="hero-buttons" style="justify-content: center;">
                     <a href="#projects" class="btn btn-primary">See My Work</a>
                     <a href="https://github.com/yiamjunbinSMU" target="_blank" class="btn btn-secondary"><i
-                            class="fab fa-github"></i> GitHub</a>
+                            class="fab fa-github"></i> &nbsp;GitHub</a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section" style="background: var(--bg-surface);">
+        <section id="about" class="section">
             <div class="container">
                 <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; align-items: stretch;">
 
                     <!-- About Text (Left) -->
-                    <div class="about-text" style="display: flex; flex-direction: column;">
+                    <div class="about-text glass"
+                        style="display: flex; flex-direction: column; padding: 2rem; border-radius: var(--radius-lg);">
                         <span class="section-eyebrow">Biography</span>
                         <h2 class="section-title">About Me</h2>
                         <p
                             style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
-                            I'm an Information Systems sophomore at <strong>Singapore Management University (SMU)</strong>,
-                            and my academic journey focuses on the intersection of technical product development and financial 
-                            technology. I'm passionate about developing solutions that positively impact others, making lives better.
+                            I'm an Information Systems sophomore at <strong>Singapore Management University
+                                (SMU)</strong>,
+                            focusing on product development and FinTech. I build solutions that matter.
                         </p>
                         <p
                             style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
-                            With a strong passion for building scalable solutions, I enjoy bridging the gap between
-                            complex backend logic and seamless frontend experiences. I thrive in collaborative
-                            environments and am always looking for ways to optimise user journeys.
+                            Passionate about bridging complex backend logic with seamless frontend experiences.
+                            I thrive in collaborative environments and am continuously optimizing user journeys.
                         </p>
                         <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
-                            When I'm not coding, I'm likely exploring and learning new knowledge, particpating in hackathons, or
-                            watching movies and reading.
+                            Beyond code, I explore new tech, participate in hackathons, and enjoy reading.
                         </p>
                     </div>
 
@@ -88,8 +93,7 @@
                                 <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 0.25rem;">Singapore
                                     Management University</div>
                                 <div style="margin-bottom: 0.25rem;">BSc (Information Systems)</div>
-                                <div style="color: var(--text-muted); font-size: 0.9rem;">Aug 2024 - May 2028 (Expected)
-                                </div>
+                                <div style="color: var(--text-muted); font-size: 0.9rem;">Aug 2024 - May 2028</div>
                             </div>
                         </div>
 
@@ -98,7 +102,7 @@
                             <div class="stat-header">Achievements</div>
                             <ul class="stat-list">
                                 <li>Dean's List AY24/25</li>
-                                <li>Ellipsis Tech Series Hackathon 2025 (Top 10 Finalist)</li>
+                                <li>Ellipsis Hackathon 2025 (Top 10)</li>
                             </ul>
                         </div>
 
@@ -106,21 +110,10 @@
                         <div class="stat-row">
                             <div class="stat-header">Relevant Coursework</div>
                             <ul class="stat-list">
-                                <li>Algorithms and Programming</li>
+                                <li>Algorithms & Programming</li>
                                 <li>Data Management</li>
-                                <li>Web Application Development I & II</li>
-                                <li>Interaction Design & Prototyping</li>
-                            </ul>
-                        </div>
-
-
-
-                        <!-- Certifications (Retained) -->
-                        <div class="stat-row" style="margin-bottom: 0;">
-                            <div class="stat-header">Certifications</div>
-                            <ul class="stat-list">
-                                <li>CS50T (Harvard)</li>
-                                <li>Microsoft Excel (Udemy)</li>
+                                <li>Web App Development I & II</li>
+                                <li>Interaction Design & Programming</li>
                             </ul>
                         </div>
                     </div>
@@ -133,7 +126,7 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">Career Path</span>
-                    <h2 class="section-title">Work Experience</h2>
+                    <h2 class="section-title">Experience</h2>
                 </div>
 
                 <div class="timeline">
@@ -185,87 +178,85 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section" style="background:var(--bg-surface)">
+        <section id="projects" class="section">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">My Work</span>
-                    <h2 class="section-title">Projects</h2>
+                    <h2 class="section-title">Selected Projects</h2>
                 </div>
 
-                <div class="projects-grid">
+                <!-- Scroll Container with Click Events -->
+                <div class="projects-scroll-container">
+
                     <!-- earthly -->
+                    <!-- Added onclick to trigger modal -->
                     <article class="project-card">
-                        <div class="project-content">
-                            <div style="display:flex; justify-content:space-between;">
-                                <h3 class="project-title">earthly</h3>
-                                <div class="project-links">
-                                    <a href="https://github.com/brandonkoh01/earthly" target="_blank"
-                                        class="project-link"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <p class="project-desc">Collaborated with 5 team members to build a web platform
-                                incentivising eco-friendly habits through habit tracking, challenges, leaderboards, and
-                                rewards for Ellipsis Tech Series Hackathon 2025. (Emerged as top 10 finalist among 50+
-                                teams)</p>
-                            <div class="tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">PHP</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">Bootstrap</span>
-                            </div>
+                        <div class="project-image-wrapper">
+                            <img src="images/earthly.png" alt="earthly" class="project-image">
                         </div>
+                        <div class="project-content">
+                            <!-- Only Title and Icon Visible -->
+                            <h3 class="project-title">earthly</h3>
+                            <div class="project-link"><i class="fab fa-github"></i></div>
+                        </div>
+
+                        <!-- Hidden Details for Modal -->
+                        <div class="project-desc">Collaborated with 5 team members to build a web platform incentivising
+                            eco-friendly habits through habit tracking, challenges, leaderboards, and rewards for
+                            Ellipsis Tech Series Hackathon 2025. (Emerged as top 10 finalist among 50+ teams)</div>
+                        <div class="tags">
+                            <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JS</span> <span
+                                class="tag">PHP</span> <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-url">https://github.com/brandonkoh01/earthly</div>
                     </article>
 
                     <!-- ByteBite -->
                     <article class="project-card">
-                        <div class="project-content">
-                            <div style="display:flex; justify-content:space-between;">
-                                <h3 class="project-title">ByteBite</h3>
-                                <div class="project-links">
-                                    <a href="https://github.com/nicca1225/ByteBite" target="_blank"
-                                        class="project-link"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <p class="project-desc">An AI-powered platform combining smart recipe discovery, budget
-                                tracking, and meal scheduling for seamless meal planning for students.</p>
-                            <div class="tags">
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Tailwind CSS</span>
-                                <span class="tag">Vite</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">API</span>
-                            </div>
+                        <div class="project-image-wrapper">
+                            <img src="images/bytebite.png" alt="ByteBite" class="project-image">
                         </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ByteBite</h3>
+                            <div class="project-link"><i class="fab fa-github"></i></div>
+                        </div>
+
+                        <div class="project-desc">An AI-powered platform combining smart recipe discovery, budget
+                            tracking, and meal scheduling for seamless meal planning for students.</div>
+                        <div class="tags">
+                            <span class="tag">Vue.js</span> <span class="tag">Firebase</span> <span class="tag">AI
+                                Integration</span>
+                        </div>
+                        <div class="project-url">https://github.com/nicca1225/ByteBite</div>
                     </article>
 
                     <!-- DeepDive -->
                     <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="images/deepdive.png" alt="DeepDive" class="project-image">
+                        </div>
                         <div class="project-content">
-                            <div style="display:flex; justify-content:space-between;">
-                                <h3 class="project-title">DeepDive</h3>
-                                <div class="project-links">
-                                    <a href="https://www.figma.com/proto/KRMVYS2MK4AoSmaTTcx7Ry/deepdive-swimmers?node-id=0-1&t=wjjTdXzFhz5OMs3D-1"
-                                        target="_blank" class="project-link"><i class="fab fa-figma"></i></a>
-                                </div>
-                            </div>
-                            <p class="project-desc">A high-fidelity prototype that surfaces hard‑to-find critical
-                                information and connects divers to emergency services in seconds, saving precious time
-                                when it matters most.</p>
-                            <div class="tags">
-                                <span class="tag">Figma</span>
-                                <span class="tag">Prototyping</span>
-                                <span class="tag">AB Testing/Maze</span>
-                            </div>
+                            <h3 class="project-title">DeepDive</h3>
+                            <div class="project-link"><i class="fab fa-figma"></i></div>
+                        </div>
+
+                        <div class="project-desc">A high-fidelity prototype that surfaces hard‑to-find critical
+                            information and connects divers to emergency services in seconds, saving precious time when
+                            it matters most.</div>
+                        <div class="tags">
+                            <span class="tag">Figma</span> <span class="tag">Prototyping</span> <span class="tag">UX
+                                Research</span>
+                        </div>
+                        <div class="project-url">
+                            https://www.figma.com/proto/KRMVYS2MK4AoSmaTTcx7Ry/deepdive-swimmers?node-id=0-1&t=wjjTdXzFhz5OMs3D-1
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section (New) -->
+        <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="container">
                 <div class="section-header">
@@ -297,28 +288,30 @@
                             <span class="tag">Figma</span>
                         </div>
                     </div>
+
+                    <!-- Certifications -->
+                    <div class="skill-category">
+                        <h3 class="skill-title">Certifications</h3>
+                        <div class="tags">
+                            <span class="tag">CS50T (Harvard)</span>
+                            <span class="tag">Microsoft Excel (Beginner to Advanced)</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <footer class="container section" id="contact" style="text-align:center; padding-bottom: 4rem;">
-            <h2 class="section-title">Let's Connect</h2>
-            <p style="color:var(--text-muted); max-width: 600px; margin-left:auto; margin-right:auto;">
+            <h2 class="section-title">Let's Connect!</h2>
+            <p style="color:var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">
                 Always open to new opportunities and interesting conversations.
-
-            </p>
-            <p
-                style="color:var(--text-muted); margin-bottom: 2rem; max-width: 600px; margin-left:auto; margin-right:auto;">
-                Feel free to reach out via email or connect on LinkedIn!
             </p>
 
             <div style="display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 3rem;">
-                <a href="mailto:junbin.yiam.2024@computing.smu.edu.sg" class="btn btn-secondary"
-                    style="border-radius: var(--radius-md); padding: 1rem 2rem;">
+                <a href="mailto:junbin.yiam.2024@computing.smu.edu.sg" class="btn btn-secondary">
                     <i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--primary-solid);"></i> Email Me
                 </a>
-                <a href="https://linkedin.com/in/yiamjunbin" target="_blank" class="btn btn-secondary"
-                    style="border-radius: var(--radius-md); padding: 1rem 2rem;">
+                <a href="https://linkedin.com/in/yiamjunbin" target="_blank" class="btn btn-secondary">
                     <i class="fab fa-linkedin" style="margin-right: 0.5rem; color: #0077b5;"></i> LinkedIn
                 </a>
             </div>
@@ -329,6 +322,27 @@
         </footer>
 
     </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-image-wrapper">
+                <img src="" alt="" class="modal-image" id="modal-img">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <div class="modal-links">
+                    <a href="#" target="_blank" id="modal-link">View Project <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+                <p class="modal-desc" id="modal-desc"></p>
+                <div class="tags" id="modal-tags">
+                    <!-- Tags injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
